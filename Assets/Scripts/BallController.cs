@@ -7,14 +7,14 @@ public class BallController : MonoBehaviour
     public Vector2 speed;
     private Rigidbody2D _rigidbody;
     // Start is called before the first frame update
+    public Vector2 initialPosition;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _rigidbody.velocity = speed;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void ResetPosition(){
+        transform.position = new Vector3(initialPosition.x, initialPosition.y, 2);
     }
 }

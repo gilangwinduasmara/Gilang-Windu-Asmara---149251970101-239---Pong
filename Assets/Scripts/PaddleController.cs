@@ -18,14 +18,6 @@ public class PaddleController : MonoBehaviour
     void Update()
     {
         Move(GetMovement());
-        // Vector3 movement = Vector3.zero;
-        // if(Input.GetKey(KeyCode.W)) {
-        //     movement = Vector3.up * speed;
-        // }
-        // else if(Input.GetKey(KeyCode.S)) {
-        //     movement = Vector3.down * speed;
-        // }
-        // transform.Translate(movement * Time.deltaTime);
     }
 
     private Vector2 GetMovement(){
@@ -36,11 +28,11 @@ public class PaddleController : MonoBehaviour
         else if(Input.GetKey(downKey)) {
             movement = Vector2.down * speed;
         }
+        Debug.Log("Paddle Speed: " + movement);
         return movement;
     }
 
     private void Move(Vector2 movement){
-        // transform.Translate(movement * Time.deltaTime);
         _rigidbody.velocity = movement;
     }
 }

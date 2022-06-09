@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c843373d4bbd34e80b40c0f8f57656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   upKey: 273
   downKey: 274
 --- !u!50 &346018671
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c843373d4bbd34e80b40c0f8f57656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   upKey: 119
   downKey: 115
 --- !u!50 &619680519

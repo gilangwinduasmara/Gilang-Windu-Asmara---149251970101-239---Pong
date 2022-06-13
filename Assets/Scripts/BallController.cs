@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallController : MonoBehaviour
+public class BallController : MonoBehaviour, ISpeedUp
 {
     public Vector2 speed;
     private Rigidbody2D _rigidbody;
@@ -16,5 +16,10 @@ public class BallController : MonoBehaviour
 
     public void ResetPosition(){
         transform.position = new Vector3(initialPosition.x, initialPosition.y, 2);
+    }
+
+    public void PowerSpeedUp(float magnitude)
+    {
+        _rigidbody.velocity *= magnitude;
     }
 }

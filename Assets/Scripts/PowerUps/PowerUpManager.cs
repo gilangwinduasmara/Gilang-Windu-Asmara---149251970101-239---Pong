@@ -46,7 +46,6 @@ public class PowerUpManager : MonoBehaviour
         {
             return;
         }
-        // simplify this
         if (position.x < powerUpAreaMin.x ||
             position.x > powerUpAreaMax.x ||
             position.y < powerUpAreaMin.y ||

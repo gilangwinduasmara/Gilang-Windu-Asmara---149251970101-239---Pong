@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PaddleController : MonoBehaviour
 {
-    public int speed = 2;
+    public float speed = 2;
     public KeyCode upKey;
     public KeyCode downKey;
     private Rigidbody2D _rigidbody;
@@ -28,11 +28,14 @@ public class PaddleController : MonoBehaviour
         else if(Input.GetKey(downKey)) {
             movement = Vector2.down * speed;
         }
-        Debug.Log("Paddle Speed: " + movement);
+        // Debug.Log("Paddle Speed: " + movement);
         return movement;
     }
 
     private void Move(Vector2 movement){
         _rigidbody.velocity = movement;
     }
+
+
+   
 }

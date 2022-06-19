@@ -8,4 +8,12 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Created by Gilang Windu Asmara - 149251970101-239");
         SceneManager.LoadScene("Game");
     }
+
+    public void MainMenu(){
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Credit(){
+        SceneManager.LoadScene("Credit");
+    }
 }
